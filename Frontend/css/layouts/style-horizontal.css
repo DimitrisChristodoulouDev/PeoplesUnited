@@ -27,11 +27,11 @@ header .brand-logo img {
   z-index: -1;
 }
 
-@media only screen and (min-width: 993px) {
+/*@media only screen and (min-width: 993px) {
   #content {
     margin-top: 65px;
   }
-}
+}*/
 
 .doughnut-chart-status {
   top: -85px;
