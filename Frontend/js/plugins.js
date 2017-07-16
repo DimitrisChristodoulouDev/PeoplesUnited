@@ -55,7 +55,8 @@ $(function () {
         gutter: 0,
         belowOrigin: !0,
         alignment: "left"
-    }), $(".tab-demo").show().tabs(), $(".tab-demo-active").show().tabs(), $(".parallax").parallax(), $(".modal-trigger").leanModal({
+    }),
+        /*$(".tab-demo").show().tabs(), $(".tab-demo-active").show().tabs(), $(".parallax").parallax(), $(".modal-trigger").leanModal({
         dismissible: !0,
         opacity: .5,
         in_duration: 300,
@@ -64,7 +65,7 @@ $(function () {
         },
         complete: function () {
         }
-    }), $(".scrollspy").scrollSpy(), $(".tooltipped").tooltip({delay: 50}), $(".sidebar-collapse").sideNav({edge: "left"}), $(".menu-sidebar-collapse").sideNav({
+    }),*/ $(".scrollspy").scrollSpy(), $(".tooltipped").tooltip({delay: 50}), $(".sidebar-collapse").sideNav({edge: "left"}), $(".menu-sidebar-collapse").sideNav({
         menuWidth: 240,
         edge: "left",
         menuOut: !1

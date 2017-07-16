@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Peoples United|Main Admin</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+
+
+    <!-- CORE CSS-->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- CSS style Horizontal Nav (Layout 03)-->
+    <link href="css/layouts/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
+          media="screen,projection">
+    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/fullcalendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet"
+          media="screen,projection">
+
+
+</head>
+
+<body>
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class="cyan">
+            <div class="nav-wrapper">
+
+                <ul class="left">
+                    <li class="no-hover"><a href="#" data-activates="slide-out"
+                                            class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i
+                            class="mdi-navigation-menu"></i></a></li>
+                    <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"> <span
+                            class="logo-text text-darken-4">Peoples United</span></a></h1></li>
+                </ul>
+                <div class="header-search-wrapper hide-on-med-and-down">
+                    <i class="mdi-action-search"></i>
+                    <input type="text" name="Search" class="header-search-input z-depth-2"
+                           placeholder="Search Everything"/>
+                </div>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" data-activates="accountDropdown" class="waves-effect waves-block waves-light"><i
+                            class="mdi-action-account-circle"></i></a>
+                    </li>
+                    <li><a href="#" data-activates="notificationDropdown"
+                           class="waves-effect waves-block waves-light"><i class="mdi-social-notifications"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+    <!-- end header nav-->
+    <!--breadcrumbs start-->
+    <div id="breadcrumbs-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h5 class="breadcrumbs-title">Page Title</h5>
+                    <ol class="breadcrumbs">
+                        <li><a href="index-2.html">Dashboard</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Calendar</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs end-->
+</header>
+<!-- END HEADER -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- START MAIN -->
+<div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+        <!-- START CONTENT -->
+        <section id="content">
+            <!--start container-->
+            <div class="container">
+
+
+                <!--card stats start-->
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-content  green white-text">
+                                <p class="card-stats-title">
+                                    <i class="mdi-action-done-all"></i>
+                                    Work Completed</p>
+                                <h4 class="card-stats-number">566</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 15% <span
+                                        class="green-text text-lighten-5">from yesterday</span>
+                                </p>
+                            </div>
+                            <div class="card-action  green darken-2">
+                                <div id="clients-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-content purple white-text">
+                                <p class="card-stats-title"><i class="mdi-action-thumbs-up-down "></i> Work in Progress
+                                </p>
+                                <h4 class="card-stats-number">9</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span
+                                        class="purple-text text-lighten-5">last month</span>
+                                </p>
+                            </div>
+                            <div class="card-action purple darken-2">
+                                <div id="sales-compositebar"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-content blue-grey white-text">
+                                <p class="card-stats-title"><i class="mdi-action-trending-down"></i> Work Uncompleted
+                                </p>
+                                <h4 class="card-stats-number">8</h4>
+                                <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80% <span
+                                        class="blue-grey-text text-lighten-5">from yesterday</span>
+                                </p>
+                            </div>
+                            <div class="card-action blue-grey darken-2">
+                                <div id="profit-tristate"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--card stats end-->
+            </div>
+        </section>
+    </div>
+</div>
+    <!-- END MAIN -->
+    <!-- START FOOTER -->
+    <div id="footer"></div>
+   <!-- <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">World Market</h5>
+                    <p class="grey-text text-lighten-4">World map, world regions, countries and cities.</p>
+                    <div id="world-map-markers"></div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Sales by Country</h5>
+                    <p class="grey-text text-lighten-4">A sample polar chart to show sales by country.</p>
+                    <div id="polar-chart-holder">
+                        <canvas id="polar-chart-country" width="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2015 <a class="grey-text text-lighten-4"
+                                    href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs"
+                                    target="_blank">GeeksLabs</a> All rights reserved.
+                <span class="right"> Design and Developed by <a class="grey-text text-lighten-4"
+                                                                href="http://geekslabs.com/">GeeksLabs</a></span>
+            </div>
+        </div>
+    </footer>-->
+    <!-- END FOOTER -->
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar-script.js"></script>
+
+
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    <script type="text/javascript" src="js/pages/inquries.js"></script>
+    <!-- Toast Notification -->
+</body>
+</html>

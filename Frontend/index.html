@@ -114,25 +114,48 @@
                         <div class="row">
                             <div class="col s12 m9 l7">
                                 <div class="card">
-
-                                    <div class="card-header left-align">
-                                        <div class="card-title">
-                                            <h4 class="title">Calendar</h4>
-                                        </div>
-
-                                    </div>
                                     <div class="card-content">
+                                        <ul  class="collection">
+                                            <li class="collection-item avatar">
+                                                <i class="mdi-action-view-agenda circle large light-blue"></i>
+                                                <span class="collection-header large">Calendar</span>
+                                                <div class="secondary-content">
+                                                    <div class="switch">
+                                                        <label>
+                                                            Personal
+                                                            <input type="checkbox"/>
+                                                            <span class="lever"></span>
+                                                            All agents calendar
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="collection-item">
+                                                <div class="row">
+                                                    <div id="full-calendar">
+                                                        <div class="row">
+                                                            <div class="col s12 m12 l12">
+                                                                <div id='calendar'></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+
+
+
+
+
+
+
+
                                         <!--Calendar frame here
                                             Add button to add event
                                         -->
 
-                                        <div id="full-calendar">
-                                            <div class="row">
-                                                <div class="col s12 m12 l12">
-                                                    <div id='calendar'></div>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -217,14 +240,16 @@
                                                     <li class="collection-item avatar">
                                                         <i class="mdi-action-assignment circle light-blue"></i>
                                                         <span class="collection-header">Recent Inquiries | Last 5 </span>
-                                                        <p><div class="switch">
+                                                       <!-- <p>
+                                                        <div class="switch">
                                                         <label>
                                                             My Inquiries
-                                                            <input type="checkbox">
+                                                            <input type="checkbox"/>
                                                             <span class="lever"></span>
                                                             All agent Inquiries
                                                         </label>
-                                                    </div></p>
+                                                    </div>
+                                                        </p>-->
                                                         <div class="secondary-content">
                                                             <a href="#" class="btn-floating waves-effect cyan right"><i class="mdi-notification-sync"></i></a>
                                                         </div>
@@ -302,8 +327,8 @@
                                                 </ul>
                                             </div>
                                             <div class="card-action">
-                                                <a href="#">Show all Inquiries</a>
-                                                <a href="#">Show My Inquiries</a>
+                                                <a href="inquiries.html">Show all Inquiries</a>
+                                                <a href="inquiries.html">Show My Inquiries</a>
                                             </div>
                                         </div>
 
@@ -370,10 +395,19 @@
                         <div class="row">
 
                             <div class="col s12 m12 l4">
-                                <ul id="task-card" class="collection with-header">
+                                <ul class="task-card collection with-header">
                                     <li class="collection-header cyan">
-                                        <h4 class="task-card-title">My Task</h4>
-                                        <p class="task-card-date">March 26, 2015</p>
+                                        <h4 class="task-card-title">Notes</h4>
+                                        <p>
+                                        <div class="switch">
+                                            <label>
+                                                My notes
+                                                <input type="checkbox"/>
+                                                <span class="lever"></span>
+                                                All notes
+                                            </label>
+                                        </div>
+                                        </p>
                                     </li>
                                     <li class="collection-item dismissable">
                                         <input type="checkbox" id="task1" />
@@ -401,53 +435,58 @@
                                 </ul>
                             </div>
 
-                            <div class="col s12 m6 l4">
-                                <div id="flight-card" class="card">
-                                    <div class="card-header amber darken-2">
-                                        <div class="card-title">
-                                            <h4 class="flight-card-title">Flight</h4>
-                                            <p class="flight-card-date">June 18, Thu 04:50</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-content-bg white-text">
-                                        <div class="card-content">
-                                            <div class="row flight-state-wrapper">
-                                                <div class="col s5 m5 l5 center-align">
-                                                    <div class="flight-state">
-                                                        <h4 class="margin">LDN</h4>
-                                                        <p class="ultra-small">London</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col s2 m2 l2 center-align">
-                                                    <i class="mdi-device-airplanemode-on flight-icon"></i>
-                                                </div>
-                                                <div class="col s5 m5 l5 center-align">
-                                                    <div class="flight-state">
-                                                        <h4 class="margin">SFO</h4>
-                                                        <p class="ultra-small">San Francisco</p>
-                                                    </div>
-                                                </div>
+
+
+
+
+
+
+                            <div class="col s12 m12 l4">
+                                <ul class="task-card collection with-header">
+                                    <li class="collection-header cyan">
+                                        <h4 class="task-card-title">Tasks</h4>
+                                        <p>
+                                            <div class="switch">
+                                            <label>
+                                                My tasks
+                                                <input type="checkbox"/>
+                                                <span class="lever"></span>
+                                                All tasks
+                                            </label>
                                             </div>
-                                            <div class="row">
-                                                <div class="col s6 m6 l6 center-align">
-                                                    <div class="flight-info">
-                                                        <p class="small"><span class="grey-text text-lighten-4">Depart:</span> 04.50</p>
-                                                        <p class="small"><span class="grey-text text-lighten-4">Flight:</span> IB 5786</p>
-                                                        <p class="small"><span class="grey-text text-lighten-4">Terminal:</span> B</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col s6 m6 l6 center-align flight-state-two">
-                                                    <div class="flight-info">
-                                                        <p class="small"><span class="grey-text text-lighten-4">Arrive:</span> 08.50</p>
-                                                        <p class="small"><span class="grey-text text-lighten-4">Flight:</span> IB 5786</p>
-                                                        <p class="small"><span class="grey-text text-lighten-4">Terminal:</span> C</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </p>
+                                    </li>
+
+
+
+
+
+                                    <li class="collection-item dismissable">
+                                        <input type="checkbox" id="task1" />
+                                        <label for="task1">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                                        </label>
+                                        <span class="task-cat teal">Mobile App</span>
+                                    </li>
+                                    <li class="collection-item dismissable">
+                                        <input type="checkbox" id="task2" />
+                                        <label for="task2">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                                        </label>
+                                        <span class="task-cat purple">Web API</span>
+                                    </li>
+                                    <li class="collection-item dismissable">
+                                        <input type="checkbox" id="task3" checked="checked" />
+                                        <label for="task3">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                                        </label>
+                                        <span class="task-cat pink">Mockup</span>
+                                    </li>
+                                    <li class="collection-item dismissable">
+                                        <input type="checkbox" id="task4" checked="checked" disabled="disabled" />
+                                        <label for="task4">I did it !</label>
+                                        <span class="task-cat cyan">Mobile App</span>
+                                    </li>
+                                </ul>
                             </div>
+
 
                             <div class="col s12 m6 l4">
 
@@ -455,68 +494,86 @@
                                     <div class="card-content">
 
 
-                                        <!--<img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                                        <a class="btn-floating  waves-effect waves-light darken-2 right">
-                                            <i class="mdi-action-account-circle"></i>
-                                        </a>
-
-                                        <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                                        <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Project Manager</p>
-                                        <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
-                                        <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>-->
 
 
-                                        <div id="media-slider">
-                                            <div class="row">
-                                                <div class="col s12 m8 l9">
-                                                    <div class="slider">
-                                                        <ul class="slides">
-                                                            <li>
-                                                                <img src="http://lorempixel.com/580/250/nature/1" alt="img-1">
-                                                                <!-- random image -->
-                                                                <div class="caption center-align">
-                                                                    <h3>This is our big Tagline!</h3>
-                                                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <img src="http://lorempixel.com/580/250/nature/2" alt="img-2">
-                                                                <!-- random image -->
-                                                                <div class="caption left-align">
-                                                                    <h3>Left Aligned Caption</h3>
-                                                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <img src="http://lorempixel.com/580/250/nature/3" alt="img-3">
-                                                                <!-- random image -->
-                                                                <div class="caption right-align">
-                                                                    <h3>Right Aligned Caption</h3>
-                                                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <img src="http://lorempixel.com/580/250/nature/4" alt="img-4">
-                                                                <!-- random image -->
-                                                                <div class="caption center-align">
-                                                                    <h3>This is our big Tagline!</h3>
-                                                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
 
-                                                </div>
+
+                                        <div class="carousel" data-indicators="true">
+
+                                            <div class="carousel-item red white-text" href="#one!">
+                                                <h2>First Panel</h2>
+                                                <p class="white-text">This is your first panel</p>
+                                            </div>
+                                            <div class="carousel-item amber white-text" href="#two!">
+                                                <h2>Second Panel</h2>
+                                                <p class="white-text">This is your second panel</p>
+                                            </div>
+                                            <div class="carousel-item green white-text" href="#three!">
+                                                <h2>Third Panel</h2>
+                                                <p class="white-text">This is your third panel</p>
+                                            </div>
+                                            <div class="carousel-item blue white-text" href="#four!">
+                                                <h2>Fourth Panel</h2>
+                                                <p class="white-text">This is your fourth panel</p>
                                             </div>
                                         </div>
 
 
 
 
+                                        <!--   <div id="media-slider">
+                                               <div class="row">
+                                                   <div class="col s12 m8 l9">
+                                                       <div class="slider">
+                                                           <ul class="slides">
+                                                               <li>
+                                                                   <img src="http://lorempixel.com/580/250/nature/1" alt="img-1">
+                                                                   &lt;!&ndash; random image &ndash;&gt;
+                                                                   <div class="caption center-align">
+                                                                       <h3>This is our big Tagline!</h3>
+                                                                       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                                                   </div>
+                                                               </li>
+                                                               <li>
+                                                                   <img src="http://lorempixel.com/580/250/nature/2" alt="img-2">
+                                                                   &lt;!&ndash; random image &ndash;&gt;
+                                                                   <div class="caption left-align">
+                                                                       <h3>Left Aligned Caption</h3>
+                                                                       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                                                   </div>
+                                                               </li>
+                                                               <li>
+                                                                   <img src="http://lorempixel.com/580/250/nature/3" alt="img-3">
+                                                                   &lt;!&ndash; random image &ndash;&gt;
+                                                                   <div class="caption right-align">
+                                                                       <h3>Right Aligned Caption</h3>
+                                                                       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                                                   </div>
+                                                               </li>
+                                                               <li>
+                                                                   <img src="http://lorempixel.com/580/250/nature/4" alt="img-4">
+                                                                   &lt;!&ndash; random image &ndash;&gt;
+                                                                   <div class="caption center-align">
+                                                                       <h3>This is our big Tagline!</h3>
+                                                                       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                                                   </div>
+                                                               </li>
+                                                           </ul>
+                                                       </div>
+
+                                                   </div>
+                                               </div>
+                                           </div>
+   -->
+
+
+
 
                                 </div>
 
-
+                                    <div class="card-action blue-grey darken-2">
+                                        <a class="btn waves-effect" id="next">Next</a>
+                                    </div>
 
 
 
@@ -778,7 +835,7 @@
                     <!--work collections end-->
 
                     <!-- Floating Action Button -->
-                    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
                         <a class="btn-floating btn-large red">
                           <i class="large mdi-editor-mode-edit"></i>
                         </a>
@@ -792,149 +849,12 @@
                     <!-- Floating Action Button -->
 
                 </div>
+                    </div>
+                </div>
                 <!--end container-->
             </section>
             <!-- END CONTENT -->
 
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
-
-            <!-- START RIGHT SIDEBAR NAV-->
-            <aside id="right-sidebar-nav">
-                <ul id="chat-out" class="side-nav rightside-navigation">
-                    <li class="li-hover">
-                    <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
-                    <div id="right-search" class="row">
-                        <form class="col s12">
-                            <div class="input-field">
-                                <i class="mdi-action-search prefix"></i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <label for="icon_prefix">Search</label>
-                            </div>
-                        </form>
-                    </div>
-                    </li>
-                    <li class="li-hover">
-                        <ul class="chat-collapsible" data-collapsible="expandable">
-                        <li>
-                            <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
-                            <div class="collapsible-body recent-activity">
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">just now</a>
-                                        <p>Jim Doe Purchased new equipments for zonal office.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Yesterday</a>
-                                        <p>Your Next flight for USA will be on 15th August 2015.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Last Week</a>
-                                        <p>Jessy Jay open a new store at S.G Road.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
-                            <div class="collapsible-body sales-repoart">
-                                <div class="sales-repoart-list  chat-out-list row">
-                                    <div class="col s8">Target Salse</div>
-                                    <div class="col s4"><span id="sales-line-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Payment Due</div>
-                                    <div class="col s4"><span id="sales-bar-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Delivery</div>
-                                    <div class="col s4"><span id="sales-line-2"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Progress</div>
-                                    <div class="col s4"><span id="sales-bar-2"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
-                            <div class="collapsible-body favorite-associates">
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Eileen Sideways</p>
-                                        <p class="place">Los Angeles, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Zaham Sindil</p>
-                                        <p class="place">San Francisco, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Renov Leongal</p>
-                                        <p class="place">Cebu City, Philippines</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Weno Carasbong</p>
-                                        <p>Tokyo, Japan</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Nusja Nawancali</p>
-                                        <p class="place">Bangkok, Thailand</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
-            <!-- LEFT RIGHT SIDEBAR NAV-->
 
         </div>
         <!-- END WRAPPER -->
@@ -992,69 +912,8 @@
 
     
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="js/plugins.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/pages/mainAdmin.js"></script>
     <!-- Toast Notification -->
-    <script type="text/javascript">
-
-
-
-/*
-        // Google Maps
-      $('#map-canvas').addClass('loading');    
-      var latlng = new google.maps.LatLng(40.6700, -73.9400); // Set your Lat. Log. New York
-      var settings = {
-          zoom: 10,
-          center: latlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          mapTypeControl: false,
-          scrollwheel: false,
-          draggable: true,
-          styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}],
-          mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-          navigationControl: false,
-          navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},            
-      };
-      var map = new google.maps.Map(document.getElementById("map-canvas"), settings);
-
-      google.maps.event.addDomListener(window, "resize", function() {
-          var center = map.getCenter();
-          google.maps.event.trigger(map, "resize");
-          map.setCenter(center);
-          $('#map-canvas').removeClass('loading');
-      });
-
-      var contentString =
-          '<div id="info-window">'+
-          '<p>18 McLuice Road, Vellyon Hills,<br /> New York, NY 10010<br /><a href="https://plus.google.com/102896039836143247306/about?gl=za&hl=en" target="_blank">Get directions</a></p>'+
-          '</div>';
-      var infowindow = new google.maps.InfoWindow({
-          content: contentString
-      });
-
-      var companyImage = new google.maps.MarkerImage('../../../ashoka/images/map-marker.png',
-          new google.maps.Size(36,62),// Width and height of the marker
-          new google.maps.Point(0,0),
-          new google.maps.Point(18,52)// Position of the marker 
-      );
-
-      var companyPos = new google.maps.LatLng(40.6700, -73.9400);
-
-      var companyMarker = new google.maps.Marker({
-          position: companyPos,
-          map: map,
-          icon: companyImage,
-          title:"Shapeshift Interactive",
-          zIndex: 3});
-
-      google.maps.event.addListener(companyMarker, 'click', function() {
-          infowindow.open(map,companyMarker);
-          pageView('http://demo.geekslabs.com/#address');
-      });
-    });*/
-    
-    </script>
-</body>
-
-
-<!-- Mirrored from demo.geekslabs.com/materialize/v2.3/layout03/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jun 2017 13:45:03 GMT -->
+   </body>
 </html>
