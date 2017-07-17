@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     public function login(Request $request){
-
     if($request['email'] == 'test@gmail.com' && $request['password'] == '1234'){
         return response()->json(
             ['status'=>1,

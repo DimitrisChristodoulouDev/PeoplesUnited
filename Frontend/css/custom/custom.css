@@ -46,3 +46,11 @@ h1 span.logo-text{
     border-radius: 2px;
     background-clip: padding-box
 }
+
+.carousel {
+    height: 500px;
+}
+
+.carousel .carousel-item{
+    width: 250px;
+}

@@ -4,7 +4,10 @@
  */
 
 $(document).ready(function () {
-    $('.carousel').carousel();
+    $('.carousel').carousel(
+        // {dist:100}
+    );
+
 
     $('#next').on('click', sliderNext)
 

@@ -1,29 +1,47 @@
-$(document).ready(function () {
+$(function () {
+    //Render templates
+    renderTemplates()
+    addHoverClass()
+});
 
+function addHoverClass() {
+    $('.card').removeClass('hoverable').addClass('hoverable');
+}
+
+
+
+
+
+
+
+
+
+//TODO: Load external handlebars template file
+function renderTemplates() {
     var templatesFolder = 'html/templates/'
     var toLoad = {
         footer: {
             url: templatesFolder + 'footer.htm',
             selector: '#footer'
         },
-        /*breadcumbs,
-        header,*/
+        header:{
+            url: templatesFolder + 'header.htm',
+            selector: '#headerContainer'
+        },
+        breadcrumbs:{
+            url: templatesFolder + 'breadcrumbs.htm',
+            selector: '#breadcrumbs'
+        }
+
 
     }
 
     $.each(toLoad, loadPartials)
+}
 
-
-
-
-})
-
-//TODO: Load external handlebars template file
 
 //Load static html blocks - Use with handlebars
 function loadPartials() {
-
-    c(this)
    return $(this.selector).load(this.url)
 }
 

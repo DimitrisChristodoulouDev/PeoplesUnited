@@ -31,7 +31,8 @@ $(function () {
         a(this)
     }), $("select").material_select();
     var e = document.getElementById("indeterminate-checkbox");
-    null !== e && (e.indeterminate = !0), $(".slider").slider({full_width: !0}), $(".dropdown-button").dropdown({
+    null !== e && (e.indeterminate = !0),
+        $(".slider").slider({full_width: !0}), $(".dropdown-button").dropdown({
         inDuration: 300,
         outDuration: 125,
         constrain_width: !0,
@@ -56,16 +57,7 @@ $(function () {
         belowOrigin: !0,
         alignment: "left"
     }),
-        /*$(".tab-demo").show().tabs(), $(".tab-demo-active").show().tabs(), $(".parallax").parallax(), $(".modal-trigger").leanModal({
-        dismissible: !0,
-        opacity: .5,
-        in_duration: 300,
-        out_duration: 200,
-        ready: function () {
-        },
-        complete: function () {
-        }
-    }),*/ $(".scrollspy").scrollSpy(), $(".tooltipped").tooltip({delay: 50}), $(".sidebar-collapse").sideNav({edge: "left"}), $(".menu-sidebar-collapse").sideNav({
+        $(".scrollspy").scrollSpy(), $(".tooltipped").tooltip({delay: 50}), $(".sidebar-collapse").sideNav({edge: "left"}), $(".menu-sidebar-collapse").sideNav({
         menuWidth: 240,
         edge: "left",
         menuOut: !1
