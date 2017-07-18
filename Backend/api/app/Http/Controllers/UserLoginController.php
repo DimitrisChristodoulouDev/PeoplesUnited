@@ -9,11 +9,6 @@ use Illuminate\Http\Request;
 class UserLoginController extends Controller
 {
     public function login(Request $request){
-
-
-
-
-
         $user = UserLogin::
                 where('email', $request->email)
                 ->where('password', $request->password)

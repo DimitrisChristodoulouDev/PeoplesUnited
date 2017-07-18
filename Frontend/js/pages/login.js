@@ -38,24 +38,26 @@ $(document).ready(function () {
         $('#loginBtn').attr('disabled', true);
         $('#loginProgress').show();
 
-        callAjax('authenticate/login', obj).done(function (response) {
+        callAjax('test', obj)
+            .success(function () {
+                alert('sasdasd');
+            })
+            .done(function (response) {
             console.log(response);
-            $('#loginProgress').hide();
-            if (response.status == 1) {//correct credentials
-                //store Toke in local storage
-                 //saveToken(response.authToken);
-                window.location.href = 'index.html';
+            // $('#loginProgress').hide();
+           /* if (response.status == 1) {//correct credentials
+                saveToken(response.token);
 
 
-                /*if (response.userType == 'ADMIN') {
+                /!*if (response.userType == 'ADMIN') {
                 } else {
                     window.location.href = 'mainAgent.html';
-                }*/
+                }*!/
             } else {
                 notification(['Wrong Email/Password!!!'])
                 $('#loginForm')[0].reset();
                 $('#loginBtn').attr('disabled', false);
-            }
+            }*/
         });
     }
 })

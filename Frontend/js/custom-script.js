@@ -2,7 +2,7 @@ $(function () {
     //Render templates
     renderTemplates()
     addHoverClass()
-    automaticLogout()
+   //TODO: automaticLogout()
 });
 
 function addHoverClass() {
@@ -73,17 +73,18 @@ function loadPartials() {
 
 
 function callAjax(url, data) {
-
-    base_url='http://api/'
+    base_url='http://api/';
     return $.ajax({
-        headers:{
-          authToken: getToken()
+        async: true,
+        crossDomain: true,
+        method: 'POST',
+        headers: {
+            token: 'token'
         },
-        cache:      true,
-        url:        base_url + url,
-        dataType:   "json",
-        type:       'post',
-        data:       data
+        cache: true,
+        url: base_url + url,
+        dataType: "text",
+        data: data
     });
 }
 

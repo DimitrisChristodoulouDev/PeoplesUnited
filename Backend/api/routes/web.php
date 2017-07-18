@@ -11,16 +11,19 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 header('Access-Control-Allow-Origin: *');
-header( 'Access-Control-Allow-Headers: Authorization, Content-Type' );
+header( 'Access-Control-Allow-Headers: Authorization, Content-Type, AuthToken' );
 
-use \Illuminate\Support\Facades\Route;
-
-
-Route::post('/authenticate/login', 'UserLoginController@login')->middleware('authentication');
+Route::post('/authenticate/login', 'UserLoginController@login');//->middleware('authentication');
 Route::post('/authenticate/register', 'LoginController@register');
 Route::post('/authenticate/forgot', 'LoginController@forgot');
+Route::post('/test', function (){
+    echo response()->json(['a'=>'asd'], 200);
+});
+
 Route::get('/test', function (){
-    return 'sadasdaad0';
+    echo response()->json(['a'=>'asd'],404);
 });
 

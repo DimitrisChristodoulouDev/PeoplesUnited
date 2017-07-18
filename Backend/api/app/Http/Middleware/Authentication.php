@@ -16,10 +16,10 @@ class Authentication
     public function handle($request, Closure $next)
     {
 
-        if ($request->header('token')!= 'token'){
+        if ($request->header('AuthToken')!= 'token'){
             return response()->json('not validated');
+        }else{
+            return $next($request);
         }
-
-        return $next($request);
     }
 }

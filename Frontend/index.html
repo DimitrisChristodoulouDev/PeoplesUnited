@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+
+<!-- Mirrored from demo.geekslabs.com/materialize/v3.1/user-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jul 2017 09:10:38 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
-    <title>Peoples United|Main Admin</title>
+    <meta name="description"
+          content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords"
+          content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>Login Page | Peoples United</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -18,463 +32,117 @@
 
 
     <!-- CORE CSS-->
+
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
     <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!-- CSS style Horizontal Nav (Layout 03)-->
-    <link href="css/layouts/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
-
+    <link href="css/layouts/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
           media="screen,projection">
-    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/fullcalendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet"
-          media="screen,projection">
-
 
 </head>
 
-<body>
+<body class="cyan">
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
 
-<!-- START HEADER -->
-<header id="header" class="page-topbar">
-    <div id="headerContainer"></div>
-    <div id="breadcrumbs"></div>
-</header>
-<!-- END HEADER -->
 
-<!-- START MAIN -->
-<div id="main">
-    <!-- START WRAPPER -->
-    <div class="wrapper">
-        <!-- START CONTENT -->
-        <section id="content">
-            <!--start container-->
-            <div class="container">
-                <!--chart dashboard start-->
-                <div id="chart-dashboard">
-                    <div class="row">
-                        <div class="col s12 m9 l7">
-                            <div class="card hoverable">
-                                <div class="card-content">
-                                    <div class="col s12 m12 l12">
-                                        <ul id="projects-collection" class="collection">
-                                            <li class="collection-item avatar">
-                                                <i class="mdi-file-folder circle light-blue darken-2"></i>
-                                                <span class="collection-header"><strong>Calendar</strong></span>
-                                                <div class="switch">
-                                                    <label>
-                                                        My Inquiries
-                                                        <input type="checkbox"/>
-                                                        <span class="lever"></span>
-                                                        All agent Inquiries
-                                                    </label>
-                                                </div>
-                                                <div class="secondary-content">
-                                                    <a href="calendarFull.html" class="btn-floating waves-effect"><i
-                                                            class="mdi-action-view-module"></i></a>
-                                                    <a href="#" class="btn-floating waves-effect blue  "><i
-                                                            class="mdi-notification-sync"></i></a>
-                                                </div>
-                                            </li>
-                                            <li class="collection-item">
-                                                <div class="row">
-                                                    <div class="col s12 m12 l12">
-                                                        <div id='calendar'></div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l5">
-
-                            <div class="card blue-grey darken-1">
-                                <div class="card-content blue-grey-text">
-                                    <ul class="collection">
-                                        <li class="collection-item avatar">
-                                            <i class="mdi-action-assignment circle light-blue"></i>
-                                            <span class="collection-header">Recent Inquiries | Last 5 </span>
-                                            <!-- <p>
-
-                                             </p>-->
-                                            <div class="secondary-content">
-                                                <a href="#" class="btn-floating waves-effect"><i
-                                                        class="mdi-action-view-module"></i></a>
-                                                <a href="#" class="btn-floating waves-effect cyan right"><i
-                                                        class="mdi-notification-sync"></i></a>
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="row">
-                                                <div class="col s6">
-                                                    <p class="collections-title">Web App</p>
-                                                    <p class="collections-content">AEC Company</p>
-                                                </div>
-                                                <div class="col s3">
-                                                    <span class="task-cat cyan">Development</span>
-                                                </div>
-                                                <div class="col s3">
-                                                    <div id="project-line-1">
-                                                        <canvas style="display: inline-block; width: 125px; height: 30px; vertical-align: top;"
-                                                                width="125" height="30"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="row">
-                                                <div class="col s6">
-                                                    <p class="collections-title">Web App</p>
-                                                    <p class="collections-content">AEC Company</p>
-                                                </div>
-                                                <div class="col s3">
-                                                    <span class="task-cat cyan">Development</span>
-                                                </div>
-                                                <div class="col s3">
-                                                    <div id="project-line-1">
-                                                        <canvas style="display: inline-block; width: 125px; height: 30px; vertical-align: top;"
-                                                                width="125" height="30"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="row">
-                                                <div class="col s6">
-                                                    <p class="collections-title">Mobile App for Social</p>
-                                                    <p class="collections-content">iSocial App</p>
-                                                </div>
-                                                <div class="col s3">
-                                                    <span class="task-cat grey darken-3">UI/UX</span>
-                                                </div>
-                                                <div class="col s3">
-                                                    <div id="project-line-2">
-                                                        <canvas style="display: inline-block; width: 125px; height: 30px; vertical-align: top;"
-                                                                width="125" height="30"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="row">
-                                                <div class="col s6">
-                                                    <p class="collections-title">Website</p>
-                                                    <p class="collections-content">MediTab</p>
-                                                </div>
-                                                <div class="col s3">
-                                                    <span class="task-cat teal">Marketing</span>
-                                                </div>
-                                                <div class="col s3">
-                                                    <div id="project-line-3">
-                                                        <canvas style="display: inline-block; width: 125px; height: 30px; vertical-align: top;"
-                                                                width="125" height="30"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="collection-item">
-                                            <div class="row">
-                                                <div class="col s6">
-                                                    <p class="collections-title">AdWord campaign</p>
-                                                    <p class="collections-content">True Line</p>
-                                                </div>
-                                                <div class="col s3">
-                                                    <span class="task-cat green">SEO</span>
-                                                </div>
-                                                <div class="col s3">
-                                                    <div id="project-line-4">
-                                                        <canvas style="display: inline-block; width: 125px; height: 30px; vertical-align: top;"
-                                                                width="125" height="30"></canvas>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-action">
-                                    <a href="inquiries.html">Show all Inquiries</a>
-                                    <a href="inquiries.html">Show My Inquiries</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+<div id="login-page" class="row">
+    <div class="col s12 z-depth-4 card-panel">
+        <form class="login-form" id="loginForm">
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <img src="images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
+                    <p class="center login-form-text">Peoples United Soccer Management System</p>
                 </div>
-                <!--chart dashboard end-->
-
-                <!--card stats start-->
-                <div id="card-stats">
-                    <div class="row">
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-content  green white-text">
-                                    <p class="card-stats-title">
-                                        <i class="mdi-action-done-all"></i>
-                                        Work Completed</p>
-                                    <h4 class="card-stats-number">566</h4>
-                                    <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 15%
-                                        <span class="green-text text-lighten-5">from yesterday</span>
-                                    </p>
-                                </div>
-                                <div class="card-action  green darken-2">
-                                    <div id="clients-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-content purple white-text">
-                                    <p class="card-stats-title"><i class="mdi-action-thumbs-up-down "></i> Work in
-                                        Progress</p>
-                                    <h4 class="card-stats-number">9</h4>
-                                    <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70%
-                                        <span class="purple-text text-lighten-5">last month</span>
-                                    </p>
-                                </div>
-                                <div class="card-action purple darken-2">
-                                    <div id="sales-compositebar"></div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-content blue-grey white-text">
-                                    <p class="card-stats-title"><i class="mdi-action-trending-down"></i> Work
-                                        Uncompleted</p>
-                                    <h4 class="card-stats-number">8</h4>
-                                    <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80%
-                                        <span class="blue-grey-text text-lighten-5">from yesterday</span>
-                                    </p>
-                                </div>
-                                <div class="card-action blue-grey darken-2">
-                                    <div id="profit-tristate"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="contacts">
-                    <div class="row">
-                        <div class="col s12 m8 l6">
-                            <div class="card yellow lighten-4">
-
-
-
-
-
-                                <div class="card-content">
-                                    <span class="card-title black-text">Contacts</span>
-
-                                    <div class="carousel" id="contactsCarousel">
-
-                                        <!--Handlebars LOOP-->
-
-                                        <div class="carousel-item">
-                                            <div class="card">
-                                                <div class="card-image">
-                                                    <!--Contact Image here-->
-                                                    <img src="images/sample-1.jpg" alt="" class="responsive-img valign">
-                                                    <span class="card-title white-text">Adwnis Podinas</span>
-                                                    <a class="btn-floating halfway-fab waves-effect waves-light red right"><i class="mdi-action-perm-contact-cal"></i></a>
-
-                                                </div>
-                                                <div class="card-content">
-                                                    <p><i class="mdi-action-perm-identity"></i> Head Coach</p>
-                                                    <p><i class="mdi-social-group"></i> Apollon FC</p>
-                                                    <p><i class="mdi-action-perm-phone-msg"></i> 97668074</p>
-                                                    <p><i class="mdi-communication-email"></i> email@apollon.com.cy</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-
-
-                                    <!--TODO: Add contacts handlebars here-->
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class=" card col s12 m8 l6">
-                        <div class="card-content">
-                            <ul class="collapsible" data-collapsible="accordion">
-                                <li>
-                                    <div class="collapsible-header">Agents</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Player Clubs</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Hot Players</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Importan People</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <!--end container-->
-        </section>
-        <!-- END CONTENT -->
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="email" name="email" type="email" autofocus>
+                    <label for="email" class="center-align">Email</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password" name="password" type="password">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12  login-text">
+                    <input type="checkbox" id="remember-me"/>
+                    <label for="remember-me">Remember me</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <button type="submit" id="loginBtn" class="btn waves-effect waves-light col s12">Login</button>
+                    <div class="progress" id="loginProgress" style="display: none;">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 m6 l6">
+                    <p class="margin medium-small"><a href="user-register.html">Register Now!</a></p>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <p class="margin right-align medium-small">
+                        <a class="modal-trigger" href="#forgotModal">Forgot Password?</a>
+                    </p>
+                </div>
+            </div>
+        </form>
     </div>
-    <!-- END WRAPPER -->
 </div>
-<!-- END MAIN -->
 
-<!-- START FOOTER -->
-<div id="footer">
+<div id="forgotModal" class="modal ">
+    <form class="col s12 m6 l4" id="forgotEmailForm">
+        <div class="modal-content ">
+            <div class="row margin">
+                <p><span>Reset your password</span></p>
+                <div class="input-field col s12">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="emailForgot" name="emailForgot" type="email">
+                    <label for="emailForgot" class="center-align">Email</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Close</a>
+            <a href="" type="submit" class="waves-effect waves-green btn-flat modal-action">Send reset link</a>
+        </div>
+    </form>
+
 
 </div>
-<!-- END FOOTER -->
 
 
-<!-- jQuery Library -->
+<!-- ================================================
+  Scripts
+  ================================================ -->
+
 <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
-<!--materialize js-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<!--scrollbar-->
+<script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/prism/prism.js"></script>
 <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script type="text/javascript" src="js/plugins/store.everything.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery-idleTimeout.js"></script>
-
-<script type="text/javascript" src="js/plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/lib/moment.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/js/fullcalendar.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar-script.js"></script>
-
-
-<!--plugins.js - Some Specific JS codes for Plugin Settings-->
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/custom-script.js"></script>
-<script type="text/javascript" src="js/pages/mainAdmin.js"></script>
+<script src="js/pages/login.js"></script>
+
 </body>
 </html>
