@@ -2,12 +2,38 @@ $(function () {
     //Render templates
     renderTemplates()
     addHoverClass()
+    automaticLogout()
 });
 
 function addHoverClass() {
     $('.card').removeClass('hoverable').addClass('hoverable');
 }
 
+function saveToken(token) {
+    localStorage.setItem('authToken', token);
+}
+
+function getToken(){
+    return localStorage.getItem('authToken');
+}
+
+function removeToken() {
+    localStorage.removeItem('authToken');
+}
+
+
+function automaticLogout() {
+    if(!getToken() && window.location.pathname != '/user-login.html') {
+        $(document).idleTimeout({
+            redirectUrl: 'user-login.html', // redirect to this url. Set this value to YOUR site's logout page.
+            idleTimeLimit: 10, // 15 seconds
+            activityEvents: 'click keypress scroll wheel mousewheel', // separate each event with a space
+            enableDialog: false,
+            customCallback: notification(['Logging out']),
+            idleCheckHeartbeat: 5
+        });
+    }
+}
 
 
 
@@ -50,7 +76,10 @@ function callAjax(url, data) {
 
     base_url='http://api/'
     return $.ajax({
-        cache:      false,
+        headers:{
+          authToken: getToken()
+        },
+        cache:      true,
         url:        base_url + url,
         dataType:   "json",
         type:       'post',

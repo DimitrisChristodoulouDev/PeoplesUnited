@@ -42,11 +42,15 @@ $(document).ready(function () {
             console.log(response);
             $('#loginProgress').hide();
             if (response.status == 1) {//correct credentials
-                if (response.userType == 'ADMIN') {
-                    window.location.href = 'mainAdmin.html';
+                //store Toke in local storage
+                 //saveToken(response.authToken);
+                window.location.href = 'index.html';
+
+
+                /*if (response.userType == 'ADMIN') {
                 } else {
                     window.location.href = 'mainAgent.html';
-                }
+                }*/
             } else {
                 notification(['Wrong Email/Password!!!'])
                 $('#loginForm')[0].reset();
