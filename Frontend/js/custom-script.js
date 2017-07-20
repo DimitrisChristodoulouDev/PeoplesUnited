@@ -10,15 +10,15 @@ function addHoverClass() {
 }
 
 function saveToken(token) {
-    localStorage.setItem('authToken', token);
+    localStorage.setItem('AuthToken', token);
 }
 
 function getToken(){
-    return localStorage.getItem('authToken');
+    return localStorage.getItem('AuthToken');
 }
 
 function removeToken() {
-    localStorage.removeItem('authToken');
+    localStorage.removeItem('AuthToken');
 }
 
 
@@ -79,12 +79,18 @@ function callAjax(url, data) {
         crossDomain: true,
         method: 'POST',
         headers: {
-            token: 'token'
+            AuthToken: 'AuthToken'
         },
         cache: true,
         url: base_url + url,
-        dataType: "text",
-        data: data
+        dataType: "json",
+        data: data,
+        success: function (response) {
+            console.log(response);
+        },
+        error: function (error) {
+            console.log(error);
+        }
     });
 }
 
@@ -96,10 +102,6 @@ function notification(msg){
 	$.map(msg, function(item){
 		Materialize.toast(item, 3000, 'rounded');
 	});
-}
-
-function c(obj){
-    return console.log(obj)
 }
 
 

@@ -18,15 +18,12 @@ class UserLoginController extends Controller
             //Get user info
             //Store user token in localstorage
             //use it
-
-
             $rtn = [
                 'status'=>1,
-                'token' => $user[0]->token,
+                'AuthToken' => $user[0]->token,
                 'type' => 'ADMIN'
 
             ];
-
         }else{
             $rtn = [
                 'status'=>0

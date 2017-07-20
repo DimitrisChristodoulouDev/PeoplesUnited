@@ -2,9 +2,6 @@
  * Created by SEIIS on 12/7/2017.
  */
 $(document).ready(function () {
-
-
-    
     $('#loginForm').validate({
         rules: {
             email: {
@@ -33,31 +30,21 @@ $(document).ready(function () {
     });
 
     function loginHandler() {
-
-        var obj = readForm('loginForm')
         $('#loginBtn').attr('disabled', true);
         $('#loginProgress').show();
 
-        callAjax('test', obj)
-            .success(function () {
-                alert('sasdasd');
-            })
+        callAjax('authenticate/login', readForm('loginForm'))
             .done(function (response) {
-            console.log(response);
-            // $('#loginProgress').hide();
-           /* if (response.status == 1) {//correct credentials
-                saveToken(response.token);
-
-
-                /!*if (response.userType == 'ADMIN') {
+                console.log(response);
+                $('#loginProgress').hide();
+                if (response.status == 1) {//correct credentials
+                    saveToken(response.token);
+                    window.location.href = 'main.html'
                 } else {
-                    window.location.href = 'mainAgent.html';
-                }*!/
-            } else {
-                notification(['Wrong Email/Password!!!'])
-                $('#loginForm')[0].reset();
-                $('#loginBtn').attr('disabled', false);
-            }*/
-        });
+                    notification(['Wrong Email/Password!!!'])
+                    $('#loginForm')[0].reset();
+                    $('#loginBtn').attr('disabled', false);
+                }
+            });
     }
 })
