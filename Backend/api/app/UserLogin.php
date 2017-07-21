@@ -9,4 +9,6 @@ class UserLogin extends Model
     protected $table = 'userLogin';
     public $timestamps = true;
 
+
+
 }

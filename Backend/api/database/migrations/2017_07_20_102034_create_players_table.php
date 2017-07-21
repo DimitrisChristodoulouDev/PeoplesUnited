@@ -30,8 +30,6 @@ class CreatePlayersTable extends Migration
             $table->date('contractEnd');
             $table->enum('level', ['A', 'U21', 'U19', 'U17', 'U15']);
             $table->date('lastGameDate');
-            $table->string('');
-            $table->integer('positionID', false);
             $table->enum('goodLeg', ['left', 'right', 'both']);
             $table->integer('shoeSize', false);
             $table->string('fatherName', 20)->nullable();

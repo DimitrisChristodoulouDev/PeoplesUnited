@@ -4,12 +4,13 @@
  */
 
 $(document).ready(function () {
-    $('.carousel').carousel(
-        // {dist:100}
-    );
 
+    $('#contactsTabs.tabs').tabs({
+        swipeable: true
+    });
+    $('.carousel').css('height: 500px');
+    // $('.tabs-content').removeClass('carousel initialized');
 
-    $('#next').on('click', sliderNext)
 
 //    $('selector').on('event', functionNameOut of document.ready)
 
@@ -20,7 +21,3 @@ $(document).ready(function () {
 function functionNameOut() {
     //Do your staff here
 }*/
-
-function sliderNext() {
-    $('.carousel').carousel('next');
-}

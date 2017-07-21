@@ -40,20 +40,22 @@ $(document).ready(function () {
 
         callAjax('authenticate/login', obj)
             .done(function (response) {
+                console.log('Response', response)
              $('#loginProgress').hide();
             if(response.status == '1') {//correct credentials
                 saveToken(response.AuthToken);
-
-
-                /*if (response.userType == 'ADMIN') {
-                } else {
-                    window.location.href = 'mainAgent.html';
-                }*/
+               window.location.href = 'main.html';
             } else {
                 notification(['Wrong Email/Password!!!'])
                 $('#loginForm')[0].reset();
                 $('#loginBtn').attr('disabled', false);
             }
+        })
+        .error(function () {
+            $('#loginForm')[0].reset();
+            $('#loginBtn').attr('disabled', false);
+            $('#loginProgress').hide();
+
         });
     }
 })

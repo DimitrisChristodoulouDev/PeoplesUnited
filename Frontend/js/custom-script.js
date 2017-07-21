@@ -88,10 +88,10 @@ function callAjax(url, data) {
         data: data,
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             console.log('Error: ', errorThrown, 'Status', textStatus);
-            notification(['An error has occured. Reload your browser'] )
+            window.location.reload();
         },
         success: function(response){
-            console.log(response)
+            console.log('Request response', response)
         }
 
     });
@@ -104,6 +104,9 @@ function readForm(id) {
 function notification(msg){
 	$.map(msg, function(item){
 		Materialize.toast(item, 3000, 'rounded');
+        var toastElement = $('.toast').first()[0];
+        var toastInstance = toastElement.M_Toast;
+        toastInstance.remove();
 	});
 }
 

@@ -19,6 +19,7 @@
 
     <!-- CORE CSS-->
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
     <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -54,10 +55,12 @@
         <section id="content">
             <!--start container-->
             <div class="container">
-                <!--chart dashboard start-->
+
+
                 <div id="chart-dashboard">
                     <div class="row">
-                        <div class="col s12 m9 l7">
+                        <!--Calendar card-->
+                        <div class="col s12 m6 l7">
                             <div class="card hoverable">
                                 <div class="card-content">
                                     <div class="col s12 m12 l12">
@@ -92,8 +95,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l5">
+                        <!--Calendar card end-->
 
+                        <!--Inquiries Card-->
+                        <div class="col s12 m6 l5">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content blue-grey-text">
                                     <ul class="collection">
@@ -204,14 +209,15 @@
                             </div>
 
                         </div>
+                        <!--Inquiries Card End-->
                     </div>
                 </div>
-                <!--chart dashboard end-->
+                <!--Calendar card end-->
 
-                <!--card stats start-->
+                <!--card WC, WUC, WIP start-->
                 <div id="card-stats">
                     <div class="row">
-                        <div class="col s12 m6 l4">
+                        <div class="col s12 m4 l4">
                             <div class="card">
                                 <div class="card-content  green white-text">
                                     <p class="card-stats-title">
@@ -227,7 +233,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 l4">
+                        <div class="col s12 m4 l4">
                             <div class="card">
                                 <div class="card-content purple white-text">
                                     <p class="card-stats-title"><i class="mdi-action-thumbs-up-down "></i> Work in
@@ -243,7 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 l4">
+                        <div class="col s12 m4 l4">
                             <div class="card">
                                 <div class="card-content blue-grey white-text">
                                     <p class="card-stats-title"><i class="mdi-action-trending-down"></i> Work
@@ -260,183 +266,133 @@
                         </div>
                     </div>
                 </div>
+                <!--card WC, WUC, WIP end-->
 
 
                 <div id="contacts">
                     <div class="row">
-                        <div class="col s12 m8 l6">
-                            <div class="card yellow lighten-4">
-
-
-
-
-
+                        <div class="col s12 m12 l12">
+                            <div class="card">
                                 <div class="card-content">
-                                    <span class="card-title black-text">Contacts</span>
-
-                                    <div class="carousel" id="contactsCarousel">
-
-                                        <!--Handlebars LOOP-->
-
-                                        <div class="carousel-item">
-                                            <div class="card">
-                                                <div class="card-image">
-                                                    <!--Contact Image here-->
-                                                    <img src="images/sample-1.jpg" alt="" class="responsive-img valign">
-                                                    <span class="card-title white-text">Adwnis Podinas</span>
-                                                    <a class="btn-floating halfway-fab waves-effect waves-light red right"><i class="mdi-action-perm-contact-cal"></i></a>
-
-                                                </div>
-                                                <div class="card-content">
-                                                    <p><i class="mdi-action-perm-identity"></i> Head Coach</p>
-                                                    <p><i class="mdi-social-group"></i> Apollon FC</p>
-                                                    <p><i class="mdi-action-perm-phone-msg"></i> 97668074</p>
-                                                    <p><i class="mdi-communication-email"></i> email@apollon.com.cy</p>
-                                                </div>
+                                    <h4 class="card-title center-align black-text">Contacts</h4>
+                                            <ul class="tabs" id="contactsTabs">
+                                                <li class="tab col s3"><a href="#agentsTab" class="active">AGENTS</a></li>
+                                                <li class="tab col s3"><a href="#test-swipe-2">Board of Director</a></li>
+                                                <li class="tab col s3"><a href="#test-swipe-3">Club Stuff</a></li>
+                                            </ul>
+                                            <div id="agentsTab" class="col s12 m12 l12">
+                                                <ul class="collection">
+                                                    <li class="collection-item avatar">
+                                                        <img src="images/yuna.jpg" alt="" class="circle">
+                                                        <span class="title">Title</span>
+                                                        <p>First Line <br>
+                                                            Second Line
+                                                        </p>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                                    </li>
+                                                    <li class="collection-item avatar">
+                                                        <i class="material-icons circle">folder</i>
+                                                        <span class="title">Title</span>
+                                                        <p>First Line <br>
+                                                            Second Line
+                                                        </p>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                                    </li>
+                                                    <li class="collection-item avatar">
+                                                        <i class="material-icons circle green">insert_chart</i>
+                                                        <span class="title">Title</span>
+                                                        <p>First Line <br>
+                                                            Second Line
+                                                        </p>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                                    </li>
+                                                    <li class="collection-item avatar">
+                                                        <i class="material-icons circle red">play_arrow</i>
+                                                        <span class="title">Title</span>
+                                                        <p>First Line <br>
+                                                            Second Line
+                                                        </p>
+                                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-
+                                            <div id="test-swipe-2" class="col s12 m12 l12">
+                                        <ul class="collection">
+                                            <li class="collection-item avatar">
+                                                <img src="images/yuna.jpg" alt="" class="circle">
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle">folder</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle green">insert_chart</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle red">play_arrow</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                        </ul>
                                     </div>
-
-
-
+                                            <div id="test-swipe-3" class="col s12 m12 l12">
+                                        <ul class="collection">
+                                            <li class="collection-item avatar">
+                                                <img src="images/yuna.jpg" alt="" class="circle">
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle">folder</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle green">insert_chart</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <i class="material-icons circle red">play_arrow</i>
+                                                <span class="title">Title</span>
+                                                <p>First Line <br>
+                                                    Second Line
+                                                </p>
+                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
                                     <!--TODO: Add contacts handlebars here-->
                                 </div>
 
                             </div>
-                        </div>
-                        <div class=" card col s12 m8 l6">
-                        <div class="card-content">
-                            <ul class="collapsible" data-collapsible="accordion">
-                                <li>
-                                    <div class="collapsible-header">Agents</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Player Clubs</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Hot Players</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">Importan People</div>
-                                    <div class="collapsible-body">
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="images/yuna.jpg" alt="" class="circle">
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle">folder</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <i class="material-icons circle green">insert_chart</i>
-                                                <span class="title">Title</span>
-                                                <p>First Line <br>
-                                                    Second Line
-                                                </p>
-                                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -475,6 +431,6 @@
 <!--plugins.js - Some Specific JS codes for Plugin Settings-->
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/custom-script.js"></script>
-<script type="text/javascript" src="js/pages/mainAdmin.js"></script>
+<script type="text/javascript" src="js/pages/main.js"></script>
 </body>
 </html>
