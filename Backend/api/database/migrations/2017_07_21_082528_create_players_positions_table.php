@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBoardOfDirectionPositionsTable extends Migration
+class CreatePlayersPositionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateBoardOfDirectionPositionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('boardofdirectorPositions', function (Blueprint $table) {
+        Schema::create('playersPositions', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('label',50);
-            //TODO: Na ta valo enum???
+            $table->string('code',5);
+            // TODO: Or prefer to add enum???
         });
     }
 
@@ -28,6 +29,6 @@ class CreateBoardOfDirectionPositionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('boardofdirectorPositions');
+        Schema::dropIfExists('playersPositions');
     }
 }

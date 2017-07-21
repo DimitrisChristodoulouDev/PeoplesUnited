@@ -16,6 +16,18 @@ class CreateClubSponsorsTable extends Migration
         Schema::create('sponsors', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('contactPersonPhoto', 250)->nullable();
+            $table->string('contactPersonName', 50);
+            $table->string('companyType', 50); //TODO ??? New table ???
+            $table->string('address', 250);
+            $table->float('amountSponsored');
+            $table->integer('durationMonths', false);
+            $table->boolean('lookingNewClub')->default(false);
+            $table->boolean('lookingNewPlayer')->default(false);
+
+
+
+
         });
     }
 

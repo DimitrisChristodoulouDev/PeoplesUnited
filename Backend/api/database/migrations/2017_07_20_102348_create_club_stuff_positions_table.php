@@ -16,6 +16,28 @@ class CreateClubStuffPositionsTable extends Migration
         Schema::create('clubStuffPositions', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('label',50);
+            /*
+             * Positions:
+             * Director Of Football,
+             * Office Secretary,
+             * Legal Department,
+             * TV Department,
+             * Technical Director,
+             * Ticketing,
+             * HR Manager,
+             * Financial Director,
+             * Accounting,
+             * PR Manager,
+             * Stadioum Facilities,
+             * Marketing,
+             * Director of Youth,
+             * Chief Scout,
+             * Scout,
+             * Youth Scout,
+             * Social Media,
+             * Training Camps
+             */
         });
     }
 

@@ -1,4 +1,4 @@
-<?php
+0<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -16,6 +16,8 @@ class CreateBoardofdirectorTable extends Migration
         Schema::create('boardofdirector', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('jobDescription',250)->nullable();
+            $table->integer('positionID', false);
         });
     }
 

@@ -16,6 +16,8 @@ class CreateMediaPersonsResponsibilitiesTable extends Migration
         Schema::create('mediaPersonsResponsibilities', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('label',50);
+
         });
     }
 

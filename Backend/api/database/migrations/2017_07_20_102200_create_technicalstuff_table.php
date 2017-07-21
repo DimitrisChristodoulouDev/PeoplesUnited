@@ -16,6 +16,11 @@ class CreateTechnicalstuffTable extends Migration
         Schema::create('technicalStuff', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->integer('positionID', false );
+            $table->integer('preferredFormationss', false);
+            $table->string('statistics', 250);
+            $table->integer('titlesWon', false);
+            $table->string('achievements', 500);
         });
     }
 
