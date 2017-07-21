@@ -1,6 +1,11 @@
-Options +FollowSymLinks -MultiViews
-# Turn mod_rewrite on
+Options +FollowSymLinks +MultiViews
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^app.peoplesunited/(.*)$ /$1 [L,NC,R]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/?$ single.html/$1 [L]
