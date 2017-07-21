@@ -17,7 +17,7 @@ class Authentication
     {
 
         if ($request->header('AuthToken')!= 'token'){
-            return response()->json('not validated');
+            return response()->json([], 403);
         }else{
             return $next($request);
         }

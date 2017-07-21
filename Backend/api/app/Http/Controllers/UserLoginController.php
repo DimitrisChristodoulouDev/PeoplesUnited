@@ -21,19 +21,19 @@ class UserLoginController extends Controller
 
 
             $rtn = [
-                'status'=>1,
-                'token' => $user[0]->token,
+                'status'=> 1,
+                'AuthToken' => $user[0]->token,
                 'type' => 'ADMIN'
 
             ];
 
         }else{
             $rtn = [
-                'status'=>0
+                'status'=> 0
 
             ];
         }
-        return response()->json($rtn);
+        return response()->json($rtn, 200);
     }
 
 

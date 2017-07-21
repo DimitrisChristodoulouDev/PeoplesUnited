@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 header('Access-Control-Allow-Origin: *');
 header( 'Access-Control-Allow-Headers: Authorization, Content-Type, AuthToken' );
 
-Route::post('/authenticate/login', 'UserLoginController@login');//->middleware('authentication');
+Route::post('/authenticate/login', 'UserLoginController@login');// To add a route to middleware:   ->middleware('authentication');
 Route::post('/authenticate/register', 'LoginController@register');
 Route::post('/authenticate/forgot', 'LoginController@forgot');
 Route::post('/test', function (){
@@ -24,6 +24,6 @@ Route::post('/test', function (){
 });
 
 Route::get('/test', function (){
-    echo response()->json(['a'=>'asd'],404);
+    echo response()->json([],404);
 });
 
