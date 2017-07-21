@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ca490b6-1342-4e98-b085-8612fb288692" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Frontend/images/users/default.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/_ide_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_093448_create_contacts_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_100628_create_contactsCategories_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_101809_create_agents_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_101846_create_boardofdirector_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_101931_create_board_of_direction_positions_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102034_create_players_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102200_create_technicalstuff_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102313_create_technical_stuff_positions_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102348_create_club_stuff_positions_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102432_create_club_stuff_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102501_create_club_sponsors_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102557_create_media_persons_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102631_create_media_persons_responsibilities_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_07_20_102709_create_fun_club_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Frontend/.htaccess" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Frontend/mainAdmin.html" afterPath="$PROJECT_DIR$/../Frontend/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app/Http/Middleware/Authentication.php" afterPath="$PROJECT_DIR$/api/app/Http/Middleware/Authentication.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/composer.json" afterPath="$PROJECT_DIR$/api/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/composer.lock" afterPath="$PROJECT_DIR$/api/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/config/app.php" afterPath="$PROJECT_DIR$/api/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/routes/web.php" afterPath="$PROJECT_DIR$/api/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Frontend/js/custom-script.js" afterPath="$PROJECT_DIR$/../Frontend/js/custom-script.js" />
@@ -71,11 +91,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserLoginController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserLoginController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#40#58#0#PHP" expanded="true" />
               </folding>
@@ -83,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="289">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -95,15 +115,15 @@
       </file>
       <file leaf-file-name="peoplesunited.userlogin" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/f28ea787/a132dc38-7bc8-4ec5-91c7-545e509cf014/peoplesunited.userlogin">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -407,8 +427,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,16 +541,18 @@
       <workItem from="1500364175162" duration="484000" />
       <workItem from="1500364677087" duration="5751000" />
       <workItem from="1500448301262" duration="3417000" />
+      <workItem from="1500622301222" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14980000" />
+    <option name="totallyTimeSpent" value="15286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.50842994" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07835821" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -562,6 +584,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f28ea787/a132dc38-7bc8-4ec5-91c7-545e509cf014/peoplesunited.userlogin">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -599,15 +652,15 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/f28ea787/a132dc38-7bc8-4ec5-91c7-545e509cf014/peoplesunited.userlogin">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -899,33 +952,33 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/f28ea787/a132dc38-7bc8-4ec5-91c7-545e509cf014/peoplesunited.userlogin">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/UserLoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#40#58#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -24,6 +24,6 @@ Route::post('/test', function (){
 });
 
 Route::get('/test', function (){
-    echo response()->json([],404);
+    echo response()->json([],403);
 });
 
