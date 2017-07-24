@@ -23,6 +23,15 @@ Route::post('/test', function (){
     echo response()->json(['a'=>'asd'], 200);
 });
 
+Route::post('/contacts','ContactsController@index');
+//Route::post('contacts','ContactsController');
+//Route::post('contacts','ContactsController');
+//Route::post('contacts','ContactsController');
+//Route::post('contacts','ContactsController');
+
+
+
+
 Route::get('/test', function (){
     echo response()->json([],403);
 });

@@ -26,17 +26,22 @@ class CreateContactsTable extends Migration
             $table->string('mobile', 50);
             $table->text('notes')->nullable();
             $table->string('address',100);
-            $table->string('countryLiving',20);
-            $table->string('countryBorn',20);
-            $table->string('city',20);
+            $table->string('countryLiving',50);
+            $table->string('countryBorn',50);
+            $table->string('city',50);
             $table->string('resumeFileUrl',250)->nullable();
             $table->string('socialMediaLinks', 250);
             $table->string('telephone', 50);
             $table->boolean('importantPeople')->default(false);
             $table->integer('categoryID', false);
-            $table->string('personalWebsite', 50)->nullable();
-            $table->string('workWebsite', 50)->nullable();
-            $table->string('otherWebsites', 50)->nullable();
+            $table->string('personalWebsite', 250)->nullable();
+            $table->string('workWebsite', 250)->nullable();
+            $table->string('otherWebsites', 250)->nullable();
+/*'tableID'=> 1,
+                'tableName'=>'agents'
+ * */
+            $table->integer('tableID',false);
+            $table->string('tableName', 50);
 
 
 

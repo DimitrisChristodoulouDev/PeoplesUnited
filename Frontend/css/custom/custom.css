@@ -47,6 +47,7 @@ h1 span.logo-text {
     background-clip: padding-box
 }
 
-.carousel {
-    min-height: 100%;
-}       
+div.tabs-content.carousel{
+    min-height:425px;
+    overflow-y: scroll;
+}

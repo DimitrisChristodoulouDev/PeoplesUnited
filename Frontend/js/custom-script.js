@@ -1,9 +1,22 @@
 $(function () {
+    // getUserPrivileges()
+
+
+
+
     //Render templates
     renderTemplates()
     addHoverClass()
    //TODO: automaticLogout()
 });
+
+function getUserPrivileges() {
+    var token = getToken();
+    callAjax('user/', {fields:['privilleges']}).done(function (response) {
+        console.log(response);
+    })
+
+}
 
 function addHoverClass() {
     $('.card').removeClass('hoverable').addClass('hoverable');
@@ -72,6 +85,36 @@ function loadPartials() {
 }
 
 
+function handlebarsRenderTemplate(selector, data){
+    Handlebars.registerHelper('each_upto', function(ary, max, options) {
+        if(!ary || ary.length == 0)
+            return options.inverse(this);
+
+        var result = [ ];
+        for(var i = 0; i < max && i < ary.length; ++i)
+            result.push(options.fn(ary[i]));
+        return result.join('');
+    });
+
+
+
+    var theTemplateScript = $(selector).html();
+    console.log(theTemplateScript)
+
+    // Compile the template
+    var theTemplate = Handlebars.compile(theTemplateScript);
+
+    // This is the default context, which is passed to the template
+    var context = {};
+    context['agents'] = data.agents;
+    console.log(context)
+    // Pass our data to the template
+    return theTemplate(context);
+}
+
+
+
+
 function callAjax(url, data) {
     base_url='http://api/';
     return $.ajax({
@@ -88,10 +131,15 @@ function callAjax(url, data) {
         data: data,
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             console.log('Error: ', errorThrown, 'Status', textStatus);
-            window.location.reload();
+            // window.location.reload();
         },
         success: function(response){
             console.log('Request response', response)
+        },
+        status:{
+            403: function () {
+                swal('Please login!!!', 'error')
+            }
         }
 
     });
