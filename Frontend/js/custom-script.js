@@ -1,9 +1,5 @@
 $(function () {
     // getUserPrivileges()
-
-
-
-
     //Render templates
     renderTemplates()
     addHoverClass()
@@ -67,12 +63,10 @@ function renderTemplates() {
             url: templatesFolder + 'header.htm',
             selector: '#headerContainer'
         },
-        breadcrumbs:{
+       /* breadcrumbs:{
             url: templatesFolder + 'breadcrumbs.htm',
             selector: '#breadcrumbs'
-        }
-
-
+        },*/
     }
 
     $.each(toLoad, loadPartials)

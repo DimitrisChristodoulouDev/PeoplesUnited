@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Peoples United|Main Admin</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+    <!-- CORE CSS-->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- CSS style Horizontal Nav (Layout 03)-->
+
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
+          media="screen,projection">
+    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/fullcalendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet"
+          media="screen,projection">
+    <link rel="stylesheet" href="js/plugins/sweetalert/sweetalert.css">
+
+
+</head>
+
+<body>
+
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+    <div id="headerContainer"></div>
+    <div id="breadcrumbs-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <h5 class="breadcrumbs-title">Contacts</h5>
+                    <ol class="breadcrumbs">
+                        <li><a href="index-2.html">Dashboard</a></li>
+                        <li><a href="#" class="active">Contacts</a></li>
+                    </ol>
+                </div>
+                <div class="input-field col s12 m3 l3 right">
+                    <select multiple>
+                        <option value="" disabled selected>Filter Contacts</option>
+                        <option value="1" selected>Agents</option>
+                        <option value="2">Players</option>
+                        <option value="3">Others</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+<!-- END HEADER -->
+
+
+<!-- START MAIN -->
+<div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+        <!-- START CONTENT -->
+        <section id="content">
+            <!--start container-->
+            <div class="container">
+                <div class="row">
+                    <div class="carousel" id="contactsCarousel">
+
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a class="modal-trigger" href="#editContactModal" data-edit="1"><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card contactCard">
+                                <div class="card-image">
+                                    <img src="images/stuff/José_Mourinho.jpg" class="responsive-img ">
+                                    <span class="card-title">Jose Mourinho</span>
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    <a href="#editContactModal" class="modal-trigger" data-edit="2" ><i class="material-icons">edit</i></a>
+                                    <a href="#" data-star="2" class="yellow-text"><i class="material-icons">star_bordered</i></a>
+                                    <a href="#" data-delete="2" class="right red-text"><i class="material-icons">delete</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end container-->
+        </section>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END WRAPPER -->
+</div>
+<!-- END MAIN -->
+
+<!-- START FOOTER -->
+<div id="footer">
+
+</div>
+<!-- END FOOTER -->
+
+
+<!-- Modals -->
+
+<div id="editContactModal" class="modal ">
+    <form class="col s12 m6 l4">
+        <div class="modal-content ">
+            <div class="row margin">
+
+                <!--TODO make tabs with
+                        - Basic info {{Image, country(flag}}
+
+                        More details
+
+                        make dynamic tabs and input fields using javascript
+
+                        -->
+                <!--
+                Name
+Surname
+DoB
+Email
+Fax
+Image
+Mobile
+
+
+                -->
+                <h5 class="title">Reset your password</h5>
+                <div class="input-field col s12 m6 l6">
+                    <i class="material-icons prefix">person</i>
+                    <input id="fullName" name="fullName" type="text">
+                    <label for="fullName" class="center-align">Full Name</label>
+                </div>
+
+                <div class="input-field col s12 m6 l6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" name="email" type="email">
+                    <label for="email" class="center-align">Email</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Close</a>
+            <a href="" type="submit" class="waves-effect waves-green btn-flat modal-action">Send reset link</a>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!--scrollbar-->
+
+<script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/plugins/store.everything.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-idleTimeout.js"></script>
+<script type="text/javascript" src="js/plugins/handlebars-v4.0.10.js"></script>
+<script type="text/javascript" src="js/plugins/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/custom-script.js"></script>
+
+<!--Page specific JS-->
+<script type="text/javascript" src="js/pages/contacts.js"></script>
+</body>
+</html>
